@@ -1,0 +1,13 @@
+#result{
+    width: 200px;
+}
+button{
+    width: 50px;
+    float: left;
+}
+.wide-button{
+    width: 100px;
+}
+.row{
+    clear: left;
+}
