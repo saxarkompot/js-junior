@@ -1,11 +1,16 @@
 var box;
 var result = document.getElementById("result");
+var equalClicked;
 function clickButton() {
+    if(equalClicked){
+    result.value = "";
+}
     result.value += this.innerText;
 }
 var arrayDigit = document.getElementsByClassName("digit");
 for (var i = 0; i < arrayDigit.length; i++) {
     arrayDigit[i].onclick = clickButton;
+    
 }
 
 
@@ -20,6 +25,7 @@ var equal = function () {
         result.value = parseInt(box) - parseInt(result.value);
     if (clickedOperator == "x")
         result.value = parseInt(box) * parseInt(result.value);
+    equalClicked = true;
 }
 equalBtn.onclick = equal;
 
