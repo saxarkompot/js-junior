@@ -10,6 +10,50 @@
 input::placeholder {
     color: white;
   }
+  .operator{
+    color:white;
+    background: orange;
+    transition: 0.5s;
+  }
+  .operator.active{
+    color:orange;
+    background: white;
+  }
+  .operator:hover {
+    background:white;  
+    color: orange;  
+    }
+  #equal{
+    color:white;
+    background: orange;
+    transition: 0.5s;
+  }
+  #equal.active{
+    color:orange;
+    background: white;
+  }
+  #equal:hover {
+    background:white;
+    color:orange;
+  }
+  #black{
+    color:white;
+    background:darkslategray;
+    transition: 0.5s; 
+  }
+  #black:hover {
+    background: rgb(165, 158, 158);  
+    }
+  .white{
+      color:black;
+      background: rgb(165, 158, 158);
+      transition: 0.5s; 
+  }
+  .white:hover{
+      background: white;
+    }   
+
+  
 button{
     width: 50px;
     height: 50px;
@@ -18,21 +62,23 @@ button{
     font-size: 17px;
     margin: 2px;
     border: 2px;
-    
+    transition: 0.8s; 
+    cursor: pointer;  
 }
+
 .wide-button{
     width: 104px;
     border-radius: 50px;
+    color:white;
+    background:darkslategray;
+    transition: 0.5s; 
+    padding: 0 52px 0 0;
 }
+.wide-button:hover{    
+    background: rgb(165, 158, 158); 
+}   
 .row{
     clear: left;    
        
 }
-#equal{
-    background:orange;
-    color:white;
-}
-.digit{
-    background: #2f4f4f;
-    
-}
+
